@@ -1,99 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vincent Onah Jude | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vincent Onah Jude | Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.6;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
 
-    header {
-      background: #111827;
-      padding: 40px 20px;
-      text-align: center;
-    }
+header {
+  text-align: center;
+  padding: 60px 20px;
+  background: #020617;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-      color: #38bdf8;
-    }
+h1 {
+  font-size: 40px;
+  color: #38bdf8;
+}
 
-    header p {
-      margin-top: 10px;
-      color: #cbd5e1;
-    }
+p {
+  color: #cbd5e1;
+}
 
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
 
-    h2 {
-      color: #38bdf8;
-      border-bottom: 1px solid #334155;
-      padding-bottom: 5px;
-    }
+.section {
+  margin-bottom: 50px;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin-top: 15px;
-      border-radius: 10px;
-    }
+h2 {
+  border-bottom: 2px solid #334155;
+  padding-bottom: 10px;
+  color: #38bdf8;
+}
 
-    ul {
-      padding-left: 20px;
-    }
+.card {
+  background: #1e293b;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
 
-    .tag {
-      display: inline-block;
-      background: #334155;
-      padding: 5px 10px;
-      border-radius: 6px;
-      margin: 5px 5px 0 0;
-      font-size: 12px;
-    }
+.card:hover {
+  transform: translateY(-5px);
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #94a3b8;
-      font-size: 14px;
-    }
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #38bdf8;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+}
 
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-  </style>
+.btn:hover {
+  background: #0ea5e9;
+}
+
+.tag {
+  display: inline-block;
+  background: #334155;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #94a3b8;
+}
+</style>
 </head>
 
 <body>
 
 <header>
   <h1>Vincent Onah Jude</h1>
-  <p>Computer Science Graduate | Incoming MSc Computer Engineering & Telematics (University of Aveiro)</p>
+  <p>Computer Science Graduate | Incoming MSc Computer Engineering & Telematics</p>
+
+  <a class="btn" href="https://github.com/earlemeka">GitHub</a>
+  <a class="btn" href="#">LinkedIn</a>
+  <a class="btn" href="#">Download CV</a>
 </header>
 
-<section>
+<div class="container">
+
+<div class="section">
   <h2>About Me</h2>
   <div class="card">
-    I am a systems builder working across logistics operations, business systems (ZEBRA Multi Services),
+    Systems builder with experience in logistics operations (ZEBRA Multi Services),
     software development, and AI prompt engineering & generative AI workflows.
   </div>
-</section>
+</div>
 
-<section>
-  <h2>Core Focus Areas</h2>
+<div class="section">
+  <h2>Focus Areas</h2>
   <div class="card">
     <span class="tag">Software Development</span>
     <span class="tag">AI Prompt Engineering</span>
@@ -101,74 +118,50 @@
     <span class="tag">Logistics Systems</span>
     <span class="tag">Business Operations</span>
   </div>
-</section>
+</div>
 
-<section>
-  <h2>Experience</h2>
-
-  <div class="card">
-    <strong>ZEBRA Multi Services</strong><br/>
-    Founder & Operations Manager
-    <ul>
-      <li>Logistics and business operations management</li>
-      <li>Digital systems and workflow organization</li>
-      <li>Real-world problem solving and execution</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2>Skills</h2>
-
-  <div class="card">
-    <ul>
-      <li>Python (Beginner)</li>
-      <li>HTML / CSS</li>
-      <li>Git & GitHub</li>
-      <li>AI Prompt Engineering</li>
-      <li>AI Video Generation Tools</li>
-    </ul>
-  </div>
-</section>
-
-<section>
+<div class="section">
   <h2>Projects</h2>
 
   <div class="card">
-    <strong>AI Prompt Library</strong>
-    <p>Structured collection of optimized prompts for AI image and video generation workflows.</p>
+    <h3>AI Prompt Library</h3>
+    <p>Optimized prompts for AI image & video generation workflows.</p>
+    <a class="btn" href="#">View Project</a>
   </div>
 
   <div class="card">
-    <strong>Portfolio Website</strong>
-    <p>Personal developer portfolio showcasing my skills and professional direction.</p>
+    <h3>AI Video Experiments</h3>
+    <p>Generative AI video workflows and creative automation experiments.</p>
+    <a class="btn" href="#">View Project</a>
   </div>
 
   <div class="card">
-    <strong>AI Video Experiments</strong>
-    <p>Experimental workflows for generative AI video creation using prompt engineering.</p>
+    <h3>Logistics System Tool</h3>
+    <p>Concept system inspired by real operations at ZEBRA Multi Services.</p>
+    <a class="btn" href="#">View Project</a>
   </div>
-</section>
 
-<section>
+</div>
+
+<div class="section">
+  <h2>Skills</h2>
+  <div class="card">
+    Python • HTML/CSS • Git • AI Prompt Engineering • System Thinking
+  </div>
+</div>
+
+<div class="section">
   <h2>Goals</h2>
   <div class="card">
-    To build a career in software engineering and AI systems in Europe, combining logistics experience,
-    software development, and artificial intelligence into practical real-world systems.
+    Building a career in software engineering and AI systems in Europe by combining
+    real-world logistics experience with modern AI technologies.
   </div>
-</section>
+</div>
 
-<section>
-  <h2>Contact</h2>
-  <div class="card">
-    GitHub: <a href="https://github.com/earlemeka">github.com/earlemeka</a><br/>
-    LinkedIn: Add your link here<br/>
-    Email: Add your email here
-  </div>
-</section>
+</div>
 
 <footer>
-  © 2026 Vincent Onah Jude — Built with GitHub Pages
+  © 2026 Vincent Onah Jude
 </footer>
 
 </body>
